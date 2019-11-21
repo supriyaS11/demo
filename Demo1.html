@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Registration</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."  required>
+      <br> 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."    required>
+     <br> 
+     <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter Email...."  required>
+      <br> 
+      <label for="mobile no">Mobile No</label>
+    <input type="text" id="mobile no" name="mobile no" placeholder="Enter.."  required>
+      <br> 
+      
+      <tr>
+    <td align='center'>Date Of Birth:</td>
+    <td><input type='text' name='name'></td>
+</tr>
+      <br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="usa">Paris</option>
+    </select>
+                  <br> 
+         <h3>Gender</h3>
+       <input type="radio" name="gender" value="male" checked> Male<br>
+     <input type="radio" name="gender" value="female"> Female<br>
+       <br>
+                <h3>Cast</h3>
+       <select name = "dropdown">
+             <option value = "OPEN" selected>OPEN</option>
+            <option value = "OBC" selected>OBC</option>
+             <option value = "SBS" selected>SBC</option>
+            <option value = "SC">SC</option>
+             <option value = "VJNT" selected>VJNT</option>
+         </select>
+         <br>
+           <input type = "file" name = "fileupload" accept = "image/*" />
+           <br> <br>
+    <button type="button" onclick="alert('Details Submitted')">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
